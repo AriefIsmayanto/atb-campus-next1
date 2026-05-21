@@ -3,7 +3,7 @@ import './globals.css';
 export const metadata = {
   title: 'ATB Baiturrahman | Kampus Digital Berbasis Nilai Islami',
   description:
-    'Website demo Akademi Teknologi dan Bisnis Baiturrahman untuk promosi PMB, profil kampus, program studi, galeri, dan kontak.',
+    'Website demo Akademi Teknologi dan Bisnis Baiturrahman: program Bisnis Digital, PMB, galeri, keunggulan, dan konsultasi pendaftaran.',
 };
 
 export default function RootLayout({ children }) {

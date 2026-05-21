@@ -1,279 +1,307 @@
-const stats = [
-  { value: '01', label: 'Program Studi Unggulan', sub: 'Bisnis Digital' },
-  { value: '2026', label: 'PMB Tahun Akademik', sub: 'Siap menerima calon mahasiswa baru' },
-  { value: '100%', label: 'Fokus Pembelajaran', sub: 'Digital, bisnis, karakter, dan praktik' },
-];
-
 const programs = [
   {
-    tag: 'Program Unggulan',
     title: 'Bisnis Digital',
-    desc: 'Program studi yang menyiapkan mahasiswa memahami pemasaran digital, manajemen bisnis, teknologi, konten kreatif, dan kewirausahaan modern.',
-    points: ['Digital marketing', 'Entrepreneurship', 'Project based learning'],
+    label: 'Program Unggulan',
+    image: '/program-bisnis.svg',
+    icon: '🛒',
+    desc: 'Pelajari strategi bisnis modern, pemasaran digital, branding, dan manajemen usaha berbasis teknologi.',
   },
   {
-    tag: 'Kelas Praktis',
     title: 'Keterampilan Digital',
-    desc: 'Mahasiswa diarahkan mengenal tools digital yang relevan untuk dunia kerja, UMKM, dan pengembangan bisnis berbasis teknologi.',
-    points: ['Desain konten', 'Data bisnis', 'Branding digital'],
+    label: 'Kelas Praktis',
+    image: '/program-digital.svg',
+    icon: '</>',
+    desc: 'Kuasai keterampilan digital seperti pengelolaan web, data bisnis, desain konten, dan teknologi terkini.',
   },
   {
-    tag: 'Karakter',
-    title: 'Nilai Islami',
-    desc: 'Lingkungan belajar dibangun dengan adab, tanggung jawab, kedisiplinan, dan orientasi kebermanfaatan untuk masyarakat.',
-    points: ['Adab', 'Integritas', 'Kolaborasi'],
+    title: 'Nilai Islami & Karakter',
+    label: 'Pembinaan',
+    image: '/program-karakter.svg',
+    icon: '☪',
+    desc: 'Pembinaan karakter islami, akhlak mulia, kedisiplinan, dan kepemimpinan untuk masa depan.',
   },
 ];
 
-const advantages = [
-  ['Kampus Berbasis Nilai', 'Pembelajaran diarahkan bukan hanya cakap digital, tetapi juga berkarakter, beradab, dan bermanfaat.'],
-  ['Kurikulum Relevan', 'Materi disusun mengikuti kebutuhan dunia bisnis digital, pemasaran, teknologi, dan kewirausahaan.'],
-  ['Belajar Praktik', 'Mahasiswa tidak hanya belajar teori, tetapi juga membuat proyek nyata yang bisa menjadi portofolio.'],
-  ['Lingkungan Positif', 'Suasana kampus yang mendukung pembinaan karakter, kedisiplinan, dan budaya belajar.'],
-  ['Akses Konsultasi PMB', 'Calon mahasiswa dapat berkonsultasi langsung melalui WhatsApp sebelum mendaftar.'],
-  ['Desain Modern', 'Website demo ini disiapkan untuk membangun kesan kampus yang aktif, profesional, dan siap berkembang.'],
+const features = [
+  ['Pembelajaran Praktis', 'Metode belajar berbasis praktik, proyek nyata, dan portofolio yang relevan dengan kebutuhan industri.', '🎯'],
+  ['Kurikulum Relevan', 'Kurikulum disusun untuk menjawab kebutuhan bisnis digital, teknologi, komunikasi, dan kewirausahaan.', '📈'],
+  ['Pembinaan Karakter', 'Integrasi nilai-nilai Islam dalam adab, kedisiplinan, tanggung jawab, dan kehidupan kampus.', '🕌'],
+  ['Konsultasi PMB', 'Tim PMB siap membantu informasi program, biaya, beasiswa, dan alur pendaftaran secara ramah.', '💬'],
+  ['Kolaborasi & Kemitraan', 'Mendorong kerja sama dengan komunitas, lembaga, UMKM, dan dunia profesional.', '🤝'],
+  ['Lingkungan Positif', 'Suasana kampus yang nyaman, islami, dan mendukung pengembangan diri mahasiswa.', '🌿'],
 ];
 
 const testimonials = [
   {
-    name: 'Calon Mahasiswa',
-    role: 'Peminat Bisnis Digital',
+    label: 'Calon Mahasiswa',
+    name: 'Aisyah N.',
+    role: 'Calon Mahasiswa 2026',
     quote:
-      'Saya tertarik karena ATB menggabungkan pembelajaran bisnis, teknologi, dan nilai Islami. Cocok untuk generasi muda yang ingin siap kerja dan siap berkarya.',
+      'Saya memilih ATB karena programnya kekinian, dosen-dosennya inspiratif, dan lingkungan kampusnya sangat mendukung.',
   },
   {
-    name: 'Orang Tua Santri',
+    label: 'Wali Mahasiswa',
+    name: 'Bapak Arifin',
     role: 'Wali Mahasiswa',
     quote:
-      'Kami berharap anak-anak tidak hanya kuliah, tetapi juga mendapatkan lingkungan yang baik, terarah, dan mendukung masa depan.',
+      'Kami percaya ATB mampu membekali anak kami dengan ilmu, keterampilan, dan akhlak yang baik untuk masa depannya.',
   },
   {
+    label: 'Tim PMB',
     name: 'Tim PMB ATB',
-    role: 'Akademi Teknologi dan Bisnis Baiturrahman',
+    role: 'Layanan Informasi',
     quote:
-      'Kami membuka ruang konsultasi bagi calon mahasiswa yang ingin mengenal program studi, biaya, fasilitas, dan alur pendaftaran.',
+      'Kami siap memberikan informasi terbaik dan membantu setiap calon mahasiswa bergabung bersama keluarga besar ATB.',
   },
 ];
 
-const gallery = ['Kegiatan Kampus', 'Pembelajaran Digital', 'Seminar Bisnis', 'Pendampingan PMB'];
+const quickLinks = [
+  ['Tentang ATB', '🏛️'],
+  ['Program Studi', '🎓'],
+  ['Fasilitas', '🏫'],
+  ['Beasiswa', '🏅'],
+  ['PMB 2026', '📝'],
+  ['Berita', '📰'],
+  ['Galeri', '🖼️'],
+  ['Kontak', '☎️'],
+];
 
 export default function Home() {
   return (
     <main>
-      <header className="nav">
-        <a className="brand" href="#beranda" aria-label="Beranda ATB">
-          <span className="logoMark">
-            <img src="/logo-atb.jpg" alt="Logo ATB" />
-          </span>
-          <span>
-            <strong>Akademi</strong>
-            <small>Teknologi & Bisnis Baiturrahman</small>
-          </span>
+      <header className="navbar">
+        <a className="brand" href="#beranda">
+          <img src="/logo-atb.jpg" alt="Logo ATB" />
+          <div>
+            <strong>ATB</strong>
+            <span>Akademi Teknologi<br />dan Bisnis Baiturrahman</span>
+          </div>
         </a>
-        <nav>
+
+        <nav className="desktopNav">
+          <a href="#beranda" className="active">Beranda</a>
           <a href="#program">Program</a>
           <a href="#keunggulan">Keunggulan</a>
+          <a href="#testimoni">Testimoni</a>
           <a href="#pmb">PMB</a>
           <a href="#kontak">Kontak</a>
         </nav>
-        <a className="navCta" href="https://wa.me/6282324444139" target="_blank">
-          Konsultasi
-        </a>
+
+        <div className="navActions">
+          <a className="btn outline small" href="https://wa.me/6282324444139" target="_blank">Konsultasi</a>
+          <a className="btn gold small" href="#pmb">Daftar PMB</a>
+        </div>
       </header>
 
-      <section id="beranda" className="hero section">
-        <div className="heroText">
-          <span className="eyebrow">PMB Akademi Teknologi dan Bisnis Baiturrahman</span>
-          <h1>Kampus Bisnis Digital Berbasis Nilai Islami</h1>
+      <section id="beranda" className="hero">
+        <div className="heroCopy">
+          <span className="kicker">PMB Akademi Teknologi dan Bisnis Baiturrahman</span>
+          <h1>Kampus Digital Berbasis Nilai Islami</h1>
+          <div className="goldLine" />
           <p>
-            ATB hadir untuk menyiapkan generasi muda yang siap menghadapi dunia digital,
-            memiliki kemampuan bisnis, serta tetap kokoh dengan akhlak dan nilai-nilai Islami.
+            Mempersiapkan generasi masa depan yang unggul di bidang teknologi dan bisnis
+            dengan berlandaskan nilai-nilai Islam.
           </p>
-          <div className="heroActions">
-            <a className="btn primary" href="#pmb">Daftar PMB</a>
-            <a className="btn ghost" href="#program">Lihat Program</a>
+
+          <div className="heroButtons">
+            <a className="btn teal" href="#program">Jelajahi Program <span>→</span></a>
+            <a className="btn gold" href="#pmb">Daftar PMB 2026/2027 <span>→</span></a>
           </div>
-          <div className="trustBar" aria-label="Kepercayaan kampus">
-            <span>Terarah</span>
-            <span>Modern</span>
-            <span>Berbasis Karakter</span>
+
+          <div className="trustBadges">
+            <span>🏅<b>Terakreditasi</b><small>Baik Sekali</small></span>
+            <span>👨‍🏫<b>Dosen</b><small>Berpengalaman</small></span>
+            <span>🎓<b>Lulusan Siap</b><small>Bersaing</small></span>
           </div>
         </div>
 
-        <div className="heroVisual" aria-label="Ilustrasi kampus ATB">
-          <div className="orb orbOne" />
-          <div className="orb orbTwo" />
-          <div className="campusCard mainCard">
-            <div className="miniLogo">
-              <img src="/logo-atb.jpg" alt="Logo ATB" />
-            </div>
-            <h2>Bisnis Digital</h2>
-            <p>Belajar bisnis, teknologi, branding, dan pemasaran digital secara praktis.</p>
-            <div className="progress">
-              <span style={{ width: '82%' }} />
-            </div>
-            <small>Persiapan PMB 2026/2027</small>
-          </div>
-          <div className="floatingCard rating">
-            <strong>ATB</strong>
-            <span>Kampus digital Islami</span>
-          </div>
-          <div className="floatingCard badge">
-            <strong>PMB</strong>
-            <span>Konsultasi via WhatsApp</span>
-          </div>
+        <div className="heroMedia">
+          <div className="heroBlob"></div>
+          <img className="campusImage" src="/hero-campus.svg" alt="Ilustrasi kampus ATB" />
+          <div className="floatBadge badgeRating">⭐ <b>4.8/5</b><small>Kepuasan Mahasiswa</small></div>
+          <div className="floatBadge badgePmb">👥 <b>PMB 2026/2027</b><small>Telah Dibuka!</small></div>
+          <div className="floatBadge badgeCareer">🎓 <b>Siap Karier & Wirausaha</b><small>Berbasis Teknologi & Nilai Islami</small></div>
         </div>
       </section>
 
-      <section className="statsWrap">
-        {stats.map((item) => (
-          <article className="statCard" key={item.label}>
-            <strong>{item.value}</strong>
-            <span>{item.label}</span>
-            <small>{item.sub}</small>
-          </article>
+      <section className="stats">
+        <article>
+          <span className="statIcon">🎓</span>
+          <div>
+            <strong>8+</strong>
+            <b>Program Unggulan</b>
+            <small>Fokus pada teknologi, bisnis, dan karakter islami</small>
+          </div>
+        </article>
+        <article>
+          <span className="statIcon goldCircle">👥</span>
+          <div>
+            <strong>PMB 2026/2027</strong>
+            <b>Penerimaan Mahasiswa Baru</b>
+            <small>Ayo bergabung bersama calon mahasiswa lainnya</small>
+          </div>
+        </article>
+        <article>
+          <span className="statIcon">📖</span>
+          <div>
+            <strong>Praktis & Relevan</strong>
+            <b>Fokus Pembelajaran</b>
+            <small>Kurikulum terkini, praktik nyata, siap kerja & wirausaha</small>
+          </div>
+        </article>
+      </section>
+
+      <section className="quickLinks">
+        {quickLinks.map(([label, icon]) => (
+          <a href={label === 'Kontak' ? '#kontak' : '#program'} key={label}>
+            <span>{icon}</span>
+            <b>{label}</b>
+          </a>
         ))}
       </section>
 
       <section id="program" className="section">
-        <div className="sectionHead">
-          <span className="eyebrow">Program Kampus</span>
-          <h2>Pilihan belajar yang disusun untuk masa depan digital</h2>
-          <p>
-            Struktur halaman dibuat ringkas, jelas, dan langsung membantu pengunjung memahami
-            keunggulan kampus serta mendorong calon mahasiswa untuk berkonsultasi.
-          </p>
+        <div className="sectionTitle">
+          <h2>Program Unggulan ATB</h2>
+          <div className="goldLine center" />
         </div>
+
         <div className="programGrid">
-          {programs.map((program) => (
-            <article className="programCard" key={program.title}>
-              <span className="chip">{program.tag}</span>
-              <h3>{program.title}</h3>
-              <p>{program.desc}</p>
-              <ul>
-                {program.points.map((point) => (
-                  <li key={point}>{point}</li>
-                ))}
-              </ul>
-              <a href="#pmb">Lihat detail</a>
-            </article>
-          ))}
-        </div>
-      </section>
-
-      <section id="keunggulan" className="section splitSection">
-        <div>
-          <span className="eyebrow">Mengapa Memilih ATB?</span>
-          <h2>Desain pendidikan yang relevan, praktis, dan bernilai</h2>
-          <p>
-            Bagian ini menonjolkan alasan kenapa calon mahasiswa perlu memilih ATB. Cocok
-            untuk meningkatkan kepercayaan dan mendorong pendaftaran.
-          </p>
-          <a className="btn primary" href="#pmb">Konsultasi Sekarang</a>
-        </div>
-        <div className="advantageGrid">
-          {advantages.map(([title, desc]) => (
-            <article className="advantageCard" key={title}>
-              <span>✓</span>
-              <h3>{title}</h3>
-              <p>{desc}</p>
-            </article>
-          ))}
-        </div>
-      </section>
-
-      <section className="section highlight">
-        <div>
-          <span className="eyebrow light">Suasana Kampus</span>
-          <h2>Bangun citra kampus yang aktif dan dekat dengan generasi muda</h2>
-          <p>
-            Gunakan area ini untuk menampilkan foto kegiatan nyata: pembelajaran, seminar,
-            praktik digital, kegiatan mahasiswa, dan suasana kampus.
-          </p>
-        </div>
-        <div className="galleryGrid">
-          {gallery.map((item, index) => (
-            <div className={`galleryItem item${index + 1}`} key={item}>
-              <span>{item}</span>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      <section className="section">
-        <div className="sectionHead">
-          <span className="eyebrow">Testimoni</span>
-          <h2>Cerita mereka, inspirasi untuk calon mahasiswa</h2>
-          <p>
-            Untuk demo, bagian ini masih berupa contoh. Nanti bisa diganti dengan testimoni
-            alumni, mahasiswa, wali mahasiswa, atau mitra kampus.
-          </p>
-        </div>
-        <div className="testimonialGrid">
-          {testimonials.map((item) => (
-            <article className="testimonialCard" key={item.name}>
-              <p>“{item.quote}”</p>
-              <div>
-                <strong>{item.name}</strong>
-                <span>{item.role}</span>
+          {programs.map((item) => (
+            <article className="programCard" key={item.title}>
+              <div className="programImage">
+                <img src={item.image} alt={item.title} />
+                <span>{item.icon}</span>
+              </div>
+              <div className="programBody">
+                <small>{item.label}</small>
+                <h3>{item.title}</h3>
+                <p>{item.desc}</p>
+                <a href="#pmb">Selengkapnya →</a>
               </div>
             </article>
           ))}
         </div>
       </section>
 
-      <section id="pmb" className="section formSection">
-        <div className="formCopy">
-          <span className="eyebrow">Konsultasi PMB</span>
-          <h2>Ingin tahu biaya, alur pendaftaran, dan program studi?</h2>
-          <p>
-            Isi data singkat, lalu arahkan calon mahasiswa untuk menghubungi admin PMB via WhatsApp.
-            Untuk versi demo ini, tombol akan membuka WhatsApp.
-          </p>
-          <div className="contactMini">
-            <span>📍 Garut RT.04, Dawung, Sambirejo, Sragen</span>
-            <span>🌐 www.baiturrahman.ac.id</span>
-            <span>📞 0823 2444 4139</span>
-          </div>
+      <section id="keunggulan" className="section compact">
+        <div className="sectionTitle">
+          <h2>Keunggulan ATB</h2>
+          <div className="goldLine center" />
         </div>
+
+        <div className="featureGrid">
+          {features.map(([title, desc, icon]) => (
+            <article className="featureCard" key={title}>
+              <span>{icon}</span>
+              <div>
+                <h3>{title}</h3>
+                <p>{desc}</p>
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section id="testimoni" className="section compact">
+        <div className="sectionTitle">
+          <h2>Testimoni</h2>
+          <div className="goldLine center" />
+        </div>
+
+        <div className="testimonialWrap">
+          <button aria-label="Sebelumnya">‹</button>
+          <div className="testimonialGrid">
+            {testimonials.map((item, index) => (
+              <article className="testimonialCard" key={item.name}>
+                <span className="quote">“</span>
+                <small>{item.label}</small>
+                <p>{item.quote}</p>
+                <div className="person">
+                  <span>{index + 1}</span>
+                  <div>
+                    <b>{item.name}</b>
+                    <small>{item.role}</small>
+                  </div>
+                </div>
+              </article>
+            ))}
+          </div>
+          <button aria-label="Berikutnya">›</button>
+        </div>
+        <div className="dots"><span></span><span></span><span></span></div>
+      </section>
+
+      <section id="kontak" className="location">
+        <div className="locationInfo">
+          <h2>Kampus ATB</h2>
+          <p>📍 Garut RT.04, Dawung, Sambirejo, Sragen</p>
+          <p>🌐 www.baiturrahman.ac.id</p>
+          <p>☎️ 0823 2444 4139</p>
+          <a className="mapButton" href="https://maps.google.com" target="_blank">Lihat di Google Maps 📍</a>
+        </div>
+        <img src="/campus-location.svg" alt="Ilustrasi lokasi kampus ATB" />
+      </section>
+
+      <section id="pmb" className="consult">
+        <div className="consultCopy">
+          <span>Konsultasi & Info PMB</span>
+          <h2>Tanya Apapun, Kami Siap Membantu!</h2>
+          <p>Tim kami siap membantu memberikan informasi seputar program, biaya, beasiswa, dan pendaftaran.</p>
+          <a className="btn whatsapp" href="https://wa.me/6282324444139?text=Assalamu%27alaikum%2C%20saya%20ingin%20konsultasi%20PMB%20ATB." target="_blank">Chat via WhatsApp →</a>
+        </div>
+
         <form className="leadForm">
-          <label>
-            Nama Lengkap
-            <input placeholder="Masukkan nama lengkap" />
-          </label>
-          <label>
-            Program yang diminati
+          <label>Nama Lengkap<input placeholder="Masukkan nama lengkap Anda" /></label>
+          <label>No. WhatsApp<input placeholder="Contoh: 0812 3456 7890" /></label>
+          <label>Email<input placeholder="Masukkan email Anda" /></label>
+          <label>Program yang Diminati
             <select defaultValue="">
               <option value="" disabled>Pilih program</option>
               <option>Bisnis Digital</option>
               <option>Konsultasi PMB</option>
             </select>
           </label>
-          <label>
-            Nomor WhatsApp
-            <input placeholder="08xxxxxxxxxx" />
-          </label>
-          <a className="btn primary full" href="https://wa.me/6282324444139?text=Assalamu%27alaikum%2C%20saya%20ingin%20konsultasi%20PMB%20ATB." target="_blank">
-            Konsultasi via WhatsApp
-          </a>
+          <label className="wide">Pesan<textarea placeholder="Tulis pertanyaan atau informasi yang ingin Anda ketahui..." /></label>
+          <a className="submitButton wide" href="https://wa.me/6282324444139?text=Assalamu%27alaikum%2C%20saya%20ingin%20konsultasi%20PMB%20ATB." target="_blank">Kirim Pesan ✈</a>
         </form>
       </section>
 
-      <footer id="kontak" className="footer">
-        <div>
-          <strong>Akademi Teknologi & Bisnis Baiturrahman</strong>
-          <p>Kampus digital, bisnis, dan karakter Islami.</p>
+      <footer className="footer">
+        <div className="footerBrand">
+          <img src="/logo-atb.jpg" alt="Logo ATB" />
+          <div>
+            <strong>ATB</strong>
+            <p>Kampus digital berbasis nilai islami yang mempersiapkan generasi unggul di bidang teknologi dan bisnis.</p>
+          </div>
         </div>
-        <div>
-          <span>Garut RT.04, Dawung, Sambirejo, Sragen</span>
-          <span>www.baiturrahman.ac.id</span>
-          <span>0823 2444 4139</span>
+
+        <div className="footerCols">
+          <div>
+            <b>Tautan Cepat</b>
+            <a href="#beranda">Beranda</a>
+            <a href="#program">Program</a>
+            <a href="#keunggulan">Keunggulan</a>
+            <a href="#pmb">PMB 2026</a>
+          </div>
+          <div>
+            <b>Program</b>
+            <a href="#program">Bisnis Digital</a>
+            <a href="#program">Keterampilan Digital</a>
+            <a href="#program">Nilai Islami & Karakter</a>
+          </div>
+          <div>
+            <b>Hubungi Kami</b>
+            <span>Garut RT.04, Dawung, Sambirejo, Sragen</span>
+            <span>0823 2444 4139</span>
+            <span>www.baiturrahman.ac.id</span>
+          </div>
         </div>
+
+        <p className="copyright">© 2025 Akademi Teknologi dan Bisnis Baiturrahman (ATB). All rights reserved.</p>
       </footer>
 
-      <a className="whatsappFloat" href="https://wa.me/6282324444139" target="_blank" aria-label="Chat WhatsApp">
-        WA
-      </a>
+      <a className="floatingWhatsapp" href="https://wa.me/6282324444139" target="_blank" aria-label="WhatsApp">WA</a>
     </main>
   );
 }
