@@ -1,49 +1,57 @@
 # Template Web Kampus ATB - Next.js
 
-Template demo website kampus Akademi Teknologi dan Bisnis Baiturrahman.
+Template demo website Akademi Teknologi dan Bisnis Baiturrahman (ATB), responsive dan siap deploy ke Vercel.
 
-## Cara menjalankan di komputer
-
-1. Install Node.js dari https://nodejs.org
-2. Buka folder project ini di VS Code
-3. Jalankan:
-
-```bash
-npm install
-npm run dev
-```
-
-4. Buka browser:
+## Isi Folder
 
 ```txt
-http://localhost:3000
+app/layout.js
+app/page.js
+app/globals.css
+public/logo-atb.jpg
+public/hero-campus.svg
+public/program-bisnis.svg
+public/program-digital.svg
+public/program-karakter.svg
+public/campus-location.svg
+package.json
+.gitignore
+README.md
 ```
 
-## Cara upload ke GitHub
+## Cara Upload ke GitHub
 
-1. Buka GitHub
-2. Klik New repository
-3. Beri nama: atb-campus-next
-4. Upload semua file di folder ini
-5. Commit changes
-
-## Cara hosting ke Vercel
-
-1. Login ke Vercel dengan akun GitHub
-2. Klik Add New Project
-3. Pilih repository atb-campus-next
-4. Klik Deploy
-5. Website akan online dengan alamat seperti:
+1. Extract file zip.
+2. Masuk ke repository GitHub.
+3. Upload seluruh isi folder ini.
+4. Pastikan struktur file di GitHub seperti ini:
 
 ```txt
-https://atb-campus-next.vercel.app
+app/
+public/
+package.json
+README.md
+.gitignore
 ```
 
-## Bagian yang perlu diganti
+5. Klik **Commit changes**.
 
-- Logo resmi kampus
-- Foto kegiatan kampus
-- Testimoni asli
-- Detail biaya PMB
-- Link WhatsApp admin PMB
-- Link Google Maps
+## Cara Deploy ke Vercel
+
+1. Masuk ke https://vercel.com
+2. Klik **Add New → Project**
+3. Pilih repository GitHub
+4. Framework otomatis: **Next.js**
+5. Klik **Deploy**
+
+## Cara Mengubah Isi
+
+- Ubah konten halaman di `app/page.js`
+- Ubah warna/desain di `app/globals.css`
+- Ganti gambar di folder `public/`
+
+## Kontak yang digunakan
+
+- Alamat: Garut RT.04, Dawung, Sambirejo, Sragen
+- Website: www.baiturrahman.ac.id
+- WhatsApp: 0823 2444 4139
