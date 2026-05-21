@@ -62,7 +62,9 @@ export default function Home() {
     <main>
       <header className="nav">
         <a className="brand" href="#beranda" aria-label="Beranda ATB">
-          <span className="logoMark">ATB</span>
+          <span className="logoMark">
+            <img src="/logo-atb.jpg" alt="Logo ATB" />
+          </span>
           <span>
             <strong>Akademi</strong>
             <small>Teknologi & Bisnis Baiturrahman</small>
@@ -102,7 +104,9 @@ export default function Home() {
           <div className="orb orbOne" />
           <div className="orb orbTwo" />
           <div className="campusCard mainCard">
-            <div className="miniLogo">ATB</div>
+            <div className="miniLogo">
+              <img src="/logo-atb.jpg" alt="Logo ATB" />
+            </div>
             <h2>Bisnis Digital</h2>
             <p>Belajar bisnis, teknologi, branding, dan pemasaran digital secara praktis.</p>
             <div className="progress">
@@ -111,8 +115,8 @@ export default function Home() {
             <small>Persiapan PMB 2026/2027</small>
           </div>
           <div className="floatingCard rating">
-            <strong>4.9</strong>
-            <span>Kesan profesional</span>
+            <strong>ATB</strong>
+            <span>Kampus digital Islami</span>
           </div>
           <div className="floatingCard badge">
             <strong>PMB</strong>
@@ -136,8 +140,8 @@ export default function Home() {
           <span className="eyebrow">Program Kampus</span>
           <h2>Pilihan belajar yang disusun untuk masa depan digital</h2>
           <p>
-            Struktur ini dibuat seperti landing page profesional: ringkas, jelas, dan langsung
-            membantu pengunjung memahami keunggulan kampus.
+            Struktur halaman dibuat ringkas, jelas, dan langsung membantu pengunjung memahami
+            keunggulan kampus serta mendorong calon mahasiswa untuk berkonsultasi.
           </p>
         </div>
         <div className="programGrid">
