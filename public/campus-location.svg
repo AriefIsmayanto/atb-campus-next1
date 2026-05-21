@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="430" viewBox="0 0 900 430">
+<defs><linearGradient id="bg" x1="0" x2="1"><stop stop-color="#dff7f3"/><stop offset="1" stop-color="#fff3d3"/></linearGradient></defs>
+<rect width="900" height="430" fill="url(#bg)"/>
+<rect x="90" y="190" width="720" height="140" rx="18" fill="#f7f4e8"/>
+<rect x="140" y="130" width="620" height="200" rx="16" fill="#ffffff"/>
+<rect x="175" y="160" width="135" height="170" fill="#087377"/>
+<rect x="590" y="160" width="130" height="170" fill="#14aaa0"/>
+<rect x="330" y="105" width="240" height="225" fill="#fafdfb"/>
+<path d="M450 145 L535 255 L450 315 L365 255 Z" fill="#eefcf9" stroke="#087377" stroke-width="11"/>
+<rect x="210" y="210" width="55" height="72" rx="12" fill="#ddf7f3"/>
+<rect x="630" y="210" width="55" height="72" rx="12" fill="#ddf7f3"/>
+<text x="450" y="76" text-anchor="middle" font-family="Arial" font-size="48" font-weight="800" fill="#087377">ATB</text>
+<text x="450" y="95" text-anchor="middle" font-family="Arial" font-size="18" font-weight="700" fill="#043f3f">Akademi Teknologi dan Bisnis Baiturrahman</text>
+<path d="M0 360 C180 310 310 330 450 355 C590 382 720 365 900 320 L900 430 L0 430Z" fill="#087377" opacity=".85"/>
+<circle cx="130" cy="330" r="34" fill="#f8ad2d"/>
+<circle cx="790" cy="315" r="46" fill="#14aaa0"/>
+</svg>

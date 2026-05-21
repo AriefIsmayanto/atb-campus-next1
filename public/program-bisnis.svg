@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="360" viewBox="0 0 700 360">
+<defs><linearGradient id="g" x1="0" x2="1"><stop stop-color="#043f3f"/><stop offset="1" stop-color="#14aaa0"/></linearGradient></defs>
+<rect width="700" height="360" fill="#eefcf9"/>
+<rect x="70" y="70" width="560" height="220" rx="28" fill="white"/>
+<rect x="100" y="110" width="500" height="120" rx="16" fill="#123239"/>
+<polyline points="135,200 205,165 280,185 360,130 450,152 560,110" fill="none" stroke="#f8ad2d" stroke-width="12" stroke-linecap="round"/>
+<polyline points="135,220 205,190 280,210 360,160 450,182 560,145" fill="none" stroke="#14aaa0" stroke-width="8" stroke-linecap="round"/>
+<circle cx="205" cy="165" r="10" fill="#f8ad2d"/><circle cx="360" cy="130" r="10" fill="#f8ad2d"/><circle cx="560" cy="110" r="10" fill="#f8ad2d"/>
+<rect x="190" y="250" width="320" height="18" rx="9" fill="url(#g)" opacity=".25"/>
+<text x="350" y="325" text-anchor="middle" font-family="Arial" font-size="28" font-weight="800" fill="#087377">Bisnis Digital</text>
+</svg>

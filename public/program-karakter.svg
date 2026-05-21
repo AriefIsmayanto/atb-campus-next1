@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="360" viewBox="0 0 700 360">
+<defs><radialGradient id="r"><stop stop-color="#fff3d3"/><stop offset="1" stop-color="#ddf7f3"/></radialGradient></defs>
+<rect width="700" height="360" fill="url(#r)"/>
+<rect x="115" y="200" width="470" height="36" rx="18" fill="#f8ad2d"/>
+<path d="M150 205 C250 155 320 160 350 205 C380 160 450 155 550 205 L350 285 Z" fill="#087377"/>
+<path d="M170 205 C260 178 320 180 350 215 C380 180 440 178 530 205" stroke="#ddf7f3" stroke-width="12" fill="none"/>
+<circle cx="350" cy="118" r="54" fill="#f8ad2d" opacity=".92"/>
+<path d="M310 130 C330 92 370 92 390 130 C370 116 330 116 310 130Z" fill="#fffaf0"/>
+<text x="350" y="330" text-anchor="middle" font-family="Arial" font-size="26" font-weight="800" fill="#087377">Nilai Islami & Karakter</text>
+</svg>
